@@ -28,3 +28,5 @@ all:
 install:
 	${INSTALL} -m 0755 -d ${DESTDIR}${INSTALLPATH}
 	${INSTALL} -m 644 acid_jack/* kaschey/* vekshin/* sony/* lexaone/* ${DESTDIR}${INSTALLPATH}
+to_ru:
+	cp acid_jack/* kaschey/* vekshin/* sony/* lexaone/* ru/
