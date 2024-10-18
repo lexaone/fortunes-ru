@@ -29,6 +29,7 @@ install:
 	${INSTALL} -m 0755 -d ${DESTDIR}${INSTALLPATH}
 	${INSTALL} -m 644 acid_jack/* kaschey/* vekshin/* sony/* lexaone/* ${DESTDIR}${INSTALLPATH}
 to_ru:
-	rm ru/*
+	rm -rf ru
+	mkdir ru
 	cp acid_jack/* kaschey/* vekshin/* sony/* lexaone/* ru/
 	@for f in $(shell ls ru/*.u8 );do strfile $${f};done
